@@ -24,6 +24,10 @@ else if (c > b)
 {
 largest = c;
 }
+else
+}
+
+}
 
 return (largest);
 }

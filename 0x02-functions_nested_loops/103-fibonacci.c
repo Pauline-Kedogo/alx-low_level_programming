@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
- int main(void)
+int main(void)
 {
 	int num1 = 1, num2 = 1, sum = 1, sum_even = 0;
 

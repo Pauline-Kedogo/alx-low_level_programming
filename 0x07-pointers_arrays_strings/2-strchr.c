@@ -10,15 +10,13 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	char *find;
-
+	
 	for (i = 0; *(s + i); i++)
 	{
-		for (i = 0; *(s + i); i++)
-		{
-			find = (s + i);
-			return (find);
-		}
+		if (*(s + i) == c)
+			return (s + i);
 	}
-	return (NULL);
+	if (*(s + i) == c)
+		return (s + i);
+	return (0);
 }

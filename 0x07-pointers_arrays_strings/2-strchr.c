@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  *  _strchr - finds the first occurence of character
  *  @s: string to search
@@ -7,6 +8,7 @@
  *  Return: On success - char pointer pointing to the
  *  memory occurrence of c; On failure - NULL.
  */
+
 char *_strchr(char *s, char c)
 {
 	int i;

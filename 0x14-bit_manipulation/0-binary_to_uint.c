@@ -9,16 +9,16 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i, j, k;
-	unsigned int res = 0;
+	unsigned int placeVal = 0;
+	int i;
 
 	if (!b)
 		return (0);
-	for (i = 0, k = 1; b[i]; i++, k *= 2)
-		if (b[i] < 48 || b[i] > 49)
+	for (i = 0; b[i]; i++)
+	{
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-
-	for (j = 0, k /= 2; j < i; j++, k /= 2)
-		res += (b[j] - 48) * k;
-	return (res);
+		placeVal = 2 * placeVal + (b[i] - '0');
+	}
+	return (placeVal);
 }

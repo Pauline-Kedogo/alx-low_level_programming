@@ -46,7 +46,6 @@ void paddr(char *__buf)
 	}
 	printf("\n");
 }
-
 /**
  * ptype - prints type
  * @__buf: buffer.
@@ -83,7 +82,6 @@ void ptype(char *__buf)
 			break;
 	}
 }
-
 /**
  * posabi - prints osabi
  * @__buf: buffer.
@@ -121,7 +119,6 @@ void posabi(char *__buf)
 	else
 		printf("<unknown: %x>\n", os);
 }
-
 /**
  * pver - prints version
  * @__buf: buffer.
@@ -137,7 +134,6 @@ void pver(char *__buf)
 		printf(" (current)");
 	printf("\n");
 }
-
 /**
  * pdata - prints data
  * @__buf: buffer.
@@ -157,7 +153,6 @@ void pdata(char *__buf)
 	else
 		printf("<unknown: %x>\n", __buf[5]);
 }
-
 /**
  * pmagic - prints magic info.
  * @__buf: buffer.
@@ -173,7 +168,6 @@ void pmagic(char *__buf)
 		printf(" %02x", __buf[bytes]);
 	printf("\n");
 }
-
 /**
  * verif_sys - verif the system version.
  * @__buf: buffer.
@@ -201,7 +195,6 @@ void verif_sys(char *__buf)
 	ptype(__buf);
 	paddr(__buf);
 }
-
 /**
  * verif_elf - verif if it is an elf file.
  * @__buf: buffer.
@@ -216,7 +209,6 @@ int verif_elf(char *__buf)
 		return (1);
 	return (0);
 }
-
 /**
  * main - check the code for Holberton School students.
  * @argc: number of arguments.

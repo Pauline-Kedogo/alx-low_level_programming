@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
-
 /**
  * _rm - reallocates memory for an array of pointers
  * to the nodes in a linked list
@@ -27,6 +26,7 @@ const listint_t **_rm(const listint_t **list, size_t size, const listint_t *ne)
 	free(list);
 	return (new_list);
 }
+
 /**
  * print_listint_safe - prints a listint_t linked list.
  * @head: pointer to the head of the list

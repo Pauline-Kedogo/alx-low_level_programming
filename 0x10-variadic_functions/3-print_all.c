@@ -7,6 +7,7 @@
  * @format: list of types of args passed to the function
  * Return: nothing.
  */
+
 void print_all(const char * const format, ...)
 {
 	va_list arguments;
@@ -14,6 +15,7 @@ void print_all(const char * const format, ...)
 	char *s;
 
 	va_start(arguments, format);
+
 	while (format && format[i])
 		{
 			switch (format[i++])
@@ -34,10 +36,14 @@ void print_all(const char * const format, ...)
 			default:
 
 				continue;
+
 			}
+
 			if (format[i])
 				printf(", ");
+
 		}
+
 	printf("\n");
 }
 
